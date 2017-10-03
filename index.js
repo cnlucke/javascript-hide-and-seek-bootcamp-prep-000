@@ -13,7 +13,7 @@ function nestedTarget() {
 function deepestChild() {
   const lis = document.querySelector('#grand-node')
 
-  const current = lis
+  var current = lis
   var next
 
   while (current != null) {
