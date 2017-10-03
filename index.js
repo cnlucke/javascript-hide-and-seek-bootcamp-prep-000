@@ -10,5 +10,14 @@ function nestedTarget() {
 }
 
 //  3) index deepestChild() returns the most deeply nested child in #grand-node:
+function deepestChild() {
 
+}
 //  4) index increaseRankBy(n) increases ranks in .ranked-list by n:
+function increaseRankBy (n) {
+  const lis = document.getElementById('app').querySelectorAll('.ranked-list li')
+
+  for (let i = 0; i < lis.length; i++) {
+  lis[i].innerHTML = (lis[i].innerHTML + 1).toString()
+  }
+}
