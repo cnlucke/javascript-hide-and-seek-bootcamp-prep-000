@@ -14,7 +14,7 @@ function deepestChild() {
   const lis = document.querySelector('#grand-node')
 
   const current = lis
-  const next
+  var next
 
   while (current != null) {
     //set next to the children of current
