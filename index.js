@@ -15,11 +15,11 @@ function deepestChild() {
 
   const current = lis
   const next
-  
+
   while (current != null) {
     //set next to the children of current
     next = current.querySelector('div')
-    
+
     //if current has no more children, return current
     if (next === null) {
       return current
@@ -31,7 +31,7 @@ function deepestChild() {
 //  4) index increaseRankBy(n) increases ranks in .ranked-list by n:
 function increaseRankBy (n) {
   const lis = document.getElementById('app').querySelectorAll('.ranked-list li')
-    
+
   for (let i = 0; i < lis.length; i++) {
     lis[i].innerHTML = (parseInt(lis[i].innerHTML) + n).toString()
   }
