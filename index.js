@@ -13,8 +13,8 @@ function nestedTarget() {
 function deepestChild() {
   const lis = document.querySelector('#grand-node')
 
-  var current = lis
-  var next
+  let current = lis
+  let next
 
   while (current != null) {
     //set next to the children of current
@@ -28,6 +28,7 @@ function deepestChild() {
     current = next
   }
 }
+
 //  4) index increaseRankBy(n) increases ranks in .ranked-list by n:
 function increaseRankBy (n) {
   const lis = document.getElementById('app').querySelectorAll('.ranked-list li')
